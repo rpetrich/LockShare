@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 
 
-%group iOSBefore7
+%group BeforeiOS7
 %hook PLPhotoBrowserController
 
 - (BOOL)shouldShowActionMenu {
@@ -14,8 +14,7 @@
 %group iOS7
 %hook PUPhotoBrowserControllerSpec
 
-- (BOOL)shouldShowShareItem
-{
+- (BOOL)shouldShowShareItem {
 	%log();
 	return YES;
 }
@@ -24,7 +23,7 @@
 
 %ctor {
 	if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-        %init(iOSBefore7);
+        %init(BeforeiOS7);
     } else {
         %init(iOS7);
     }
