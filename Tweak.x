@@ -5,7 +5,6 @@
 %hook PLPhotoBrowserController
 
 - (BOOL)shouldShowActionMenu {
-	%log();
 	return YES;
 }
 %end
@@ -15,7 +14,6 @@
 %hook PUPhotoBrowserControllerSpec
 
 - (BOOL)shouldShowShareItem {
-	%log();
 	return YES;
 }
 %end
