@@ -4,6 +4,6 @@ Section: Tweaks
 Architecture: iphoneos-arm
 Version: 0.1
 Description: Share photos from the lock screen camera
-Name: LockShare
+Name: Sharelock
 Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5000)
 Author: Ryan Petrich
