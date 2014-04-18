@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Version: 0.1
 Description: Share images right from the lock screen
 Name: LockShare
-Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5000)
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5000)
 Author: Ryan Petrich
